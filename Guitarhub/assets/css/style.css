@@ -1,0 +1,9 @@
+body{
+    background-color: rgb(236, 226, 226);
+}
+
+.logo{
+    width: 15%;
+    display: flex;
+    align-content: center;
+}
