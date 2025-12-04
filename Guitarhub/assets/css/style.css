@@ -1,9 +1,60 @@
-body{
-    background-color: rgb(236, 226, 226);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.logo{
-    width: 15%;
+body {
+    font-family: "Inter", Arial, sans-serif;
+    line-height: 1.6;
+    color: #111;
+    background-color: #f8f8f8;
+}
+
+h1, h2, h3{
+    font-weight: 700;
+}
+
+p{
+    font-weight: 400;
+}
+
+header {
+    background: url("/img/How-to-Learn-Playing-Guitar-by-Yourself.jpg") no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 20px 40px;
     display: flex;
-    align-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .navigation ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
+
+header .navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border:#EA672D 1px solid;
+    border-radius: 25px;
+    padding: 10px;
+    font-weight: 100;
+}
+
+header .navigation a:hover{
+    background-color: #EA672D;
+    transition: 0.5s;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    text-align: left;
 }

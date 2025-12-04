@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,9 @@
     <title>Beginner’s guitar hub</title>
     <link rel="icon" type="image/svg+xml" href="/img/BEGGINERS__GUITAR_HUB-removebg-preview.png">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -18,11 +21,11 @@
         <div class="options">
             <nav class="navigation">
                 <ul>
-                    <li class="moznost">Doporučené kytary</li>
-                    <li class="moznost">Rozdíly mezi kytarami</li>
-                    <li class="moznost">Struny</li>
-                    <li class="moznost">Základní akordy</li>
-                    <li class="moznost">Strumming pattern</li>
+                    <li class="moznost"><a href="#doporucene">Doporučené kytary</a></li>
+                    <li class="moznost"><a href="#rozdily">Rozdíly mezi kytarami</a></li>
+                    <li class="moznost"><a href="#struny">Struny</a></li>
+                    <li class="moznost"><a href="#akordy">Základní akordy</a></li>
+                    <li class="moznost"><a href="#rytmus">Strumming pattern</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,18 +35,89 @@
         <button class="start">Začít</button>
     </header>
 
-    <section class="doporucene_kytary">
+    <section id="doporucene" class="doporucene_kytary">
         <h3>DOPORUČENÉ KYTARY</h3>
         <div class="produkt">produkt!!!</div>
         <div class="produkt">produkt!!!</div>
         <div class="produkt">produkt!!!</div>
     </section>
-    <section class="rozdily">
+    <section id="rozdily" class="rozdily">
+        <h2>Rozdíly mezi akustickou a elektrickou kytarou</h2>
         <div class="container">
-            <div class="akusticka_img"></div>
-            <div class="akusticka_popis"></div>
+            <div class="akusticka_img">obrazek!!!</div>
+            <div class="akusticka_popis">
+                <h3>Akustická kytara</h3>
+                <p style="font-weight: bold;">Nemá žádnou elektroniku</p>
+                <p>Zvuk vytváří a zesiluje rezonanční dutina</p>
+                <p style="font-weight: bold;">Hraje nahlas sama o sobě</p>
+                <p style="font-weight: bold;">Univerzální zvuk</p>
+                <p>Vhodná pro táboráky, pop, funk, jemnější styly</p>
+                <p style="font-weight: bold;">Nižší cena na začátek</p>
+                <p style="font-weight: bold;">Silnější struny</p>
+                <p>Na začátku trochu bolí prsty, ale rychle si zvykneš</p>
+            </div>
+            <div class="elektricka_img">obrazek!!!</div>
+            <div class="elektricka_popis">
+                <h3>Elektrická kytara</h3>
+                <p style="font-weight: bold;">Potřebuje zesilovač (nebo sluchátkový mini-amp)</p>
+                <p style="font-weight: bold;">Tenké, měkké struny</p>
+                <p>Snáz se mačkají</p>
+                <p style="font-weight: bold;">Úzký krk</p>
+                <p>Pohodlný pro malé ruce</p>
+                <p style="font-weight: bold;">Široká škála zvuků</p>
+                <p>Čistý tón, zkreslení, efekty</p>
+                <p>Vhodná pro hraní rocku, metalu, punku, blues, popu</p>
+            </div>
         </div>
     </section>
+    <section id="struny" class="struny">
+        <h2>Struny</h2>
+        <div class="struny_img">obrazek!!!</div>
+        <div class="struny_popis">
+            <h3>Jak se naučit názvy strun?</h3>
+            <p style="font-weight: bold;">Stačí si zapamatovat jednoduchou říkanku:</p>
+            <p>Ema (E1) - Nejtenčí</p>
+            <p>Hodila (H)</p>
+            <p>Granát (G)</p>
+            <p>Do (D)</p>
+            <p>Atomové (A)</p>
+            <p>Elektrárny (E2) - Nejtlustší</p>
+        </div>
+    </section>
+    <section id="akordy" class="zakladni_akordy">
+        <h2>Základní akordy</h2>
+        <div class="akord_container">
+            SEM DYNAMICKY NACITAT AKORDY!!!
+        </div>
+        <div class="tipy">
+            <h3>Tipy</h3>
+            <p>Nejdřív postav akordy pomalu, pak teprve hraj</p>
+            <p>Procvičuj přechody mezi akordy</p>
+            <p>Tlak v prstech (tlačení na struny) ovlivňují čistotu zvuku - neboj se zalačit</p>
+        </div>
+    </section>
+    <section id="rytmus" class="rytmus">
+        <h2>Rytmus (Strumming pattern)</h2>
+        <div class="rytmus_popis1">
+            <p>D = Dolů</p>
+            <p>U = Nahoru</p>
+        </div>
+        <div class="rytmus_popis2">
+            <p>Základní rytmus, na který se dá zahrát většina písniček</p>
+            <p>D-D-U-U-D-U</p>
+        </div>
+        <div class="tipy">
+            <h3>Tipy</h3>
+            <p>Trénuj si strumming pattern na prázdných strunách</p>
+            <p>Později přidej akordy</p>
+        </div>
+    </section>
+    <footer>
+        obrazek!!!
+        <p>© 2025 Beginner’s Guitar Hub</p>
+        <p>Made by Michal Bubna</p>
+    </footer>
+    <script src="/assets/js/script.js"></script>
 </body>
 
 </html>
