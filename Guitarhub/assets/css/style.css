@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    user-select: none;
 }
 
 body {
@@ -18,6 +19,22 @@ h1, h2, h3{
 
 p{
     font-weight: 400;
+}
+
+/* --- HEADER--- */
+
+.logo_ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left, .right{
+    flex: 1;
+}
+
+.logo_svg{
+    width: 10rem;
 }
 
 header {
@@ -47,17 +64,19 @@ header .navigation a {
     border-radius: 25px;
     padding: 10px;
     font-weight: 100;
+    transition: linear 0.2s;
 }
 
 header .navigation a:hover{
     background-color: #EA672D;
-    transition: linear 0.2s;
-    transform: scale(1.05);
+    transform: scale(1.2);
 }
 
 header .title h1 {
+    font-weight: bold;
     font-size: 1.8rem;
     text-align: left;
+    margin-top: 5%;
 }
 
 header .start{
@@ -66,43 +85,98 @@ header .start{
     padding-top: 1%;
     padding-bottom: 1%;
     margin-top: 3%;
-    margin-bottom: 3%;
-    background-color: #0a6817a8;
+    margin-bottom: 15%;
+    background-color: #0a6817d9;
     border-radius: 25px;
     border: none;
     color: white;
     font-weight: 500;
     font-size: large;
     cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+    transition: linear 0.2s;
+    text-decoration: none;
 }
 
 header .start:hover{
     background-color: #086100;
-    transition: linear 0.2s;
     transform: scale(1.05);
 }
 
+/* --- DOPORUČENÉ KYTARY --- */
+
 .doporucene_kytary h3{
     text-align: center;
+    color: white;
+    margin-bottom:2% ;
 }
 
 .doporucene_kytary .produkty{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 15px;
-
+    gap: 3%;
+    margin-bottom: 2%;
 }
 
 .doporucene_kytary .produkt{
     border: 1px gray solid;
     border-radius: 25px;
     transition: 0.5s ease;
+    cursor: pointer;
+    padding: 2%;
+    max-width: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.cena_nazev{
+    margin-top: auto;
+
+}
+
+.nazev{
+    color: #111;
+}
+
+.cena{
+    color: #EA672D;
+    border: 1px solid #EA672D;
+    border-radius: 25px;
+    text-align: center;
+    transition: 0.5s ease;
+    text-decoration: none;
+}
+
+.cena:hover{
+    color: white;
+    background-color: #EA672D;
+    transform: scale(1.05);
+}
+
+.doporucene_kytary p{
+    text-align: center;
+    text-decoration: none;
 }
 
 .doporucene_kytary .produkt:hover{
     transform: scale(1.05);
 }
+
+.doporucene_kytary{
+    margin-top: -10%;
+}
+
+.produkt_img{
+    width: 10rem;
+
+}
+
+/* --- ROZDÍLY MEZI KYTARAMI --- */
 
 .rozdily h2{
     text-align: center;
@@ -113,16 +187,55 @@ header .start:hover{
     border-radius: 25px;
     padding: 5%;
     margin: 3%;
+    gap: 3%;
+        display: flex;
+    align-items: center;
 }
 
 .rozdily .container h3{
     color:#0a6817
 }
 
-.rozdily .akusticka_img{
-    border: 1px solid black;
+.rozdily .kytara_img{
+    max-width: 30rem;
 }
 
-.rozdily .elektricka_img{
-    border: 1px solid black;
+.rozdily img{
+    width: 30%;
+}
+
+.akusticka, .elektricka{
+
+    margin:  0px 3% 0px 3%
+}
+
+/* --- STRUNY --- */
+
+.struny{
+    background-color: #EA672D;
+}
+
+.struny h2{
+    text-align: center;
+    color: #f8f8f8;
+}
+
+.struny_img{
+    max-width: 10rem;
+    margin-right: 10rem;
+    margin-left: 5rem;
+}
+
+.struny_popis{
+    text-align: left;
+    background-color: #f8f8f8;
+    border: 1px solid #0a6817d9;
+    border-radius: 25px;
+    padding: 1%;
+}
+
+.struny_div{
+    display: flex;
+justify-content: center;
+margin: 2%;
 }
