@@ -56,11 +56,6 @@ header .navigation ul {
     
 }
 
-header .dark_mode_btn{
-    background-color: #0a6817;
-    width: 30px;
-}
-
 header .navigation a {
     color: white;
     text-decoration: none;
@@ -101,11 +96,6 @@ header .start{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
     transition: linear 0.2s;
     text-decoration: none;
-}
-
-header .start_a{
-    text-decoration: none;
-    color: white;
 }
 
 header .start:hover{
@@ -194,14 +184,12 @@ header .start:hover{
 
 .rozdily .container{
     border: 1px grey solid;
-    background-color: white;
     border-radius: 25px;
     padding: 5%;
     margin: 3%;
     gap: 3%;
         display: flex;
     align-items: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .rozdily .container h3{
@@ -224,7 +212,7 @@ header .start:hover{
 /* --- STRUNY --- */
 
 .struny{
-    background-image: linear-gradient(to top, #b4522b, #db5014) ;
+    background-color: #EA672D;
 }
 
 .struny h2{
@@ -250,20 +238,4 @@ header .start:hover{
     display: flex;
 justify-content: center;
 margin: 2%;
-}
-
-/*---FOOTER---*/
-footer{
-    background-image: linear-gradient(to top, #4d210f, #c75524) ;
-    text-align: center;
-    padding: 5%;
-}
-
-footer p{
-    color: #f8f8f8;
-    padding: 1%;
-}
-
-footer img{
-    width: 15%;
 }
