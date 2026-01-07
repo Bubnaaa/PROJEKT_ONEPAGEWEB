@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header id="header">
+    <header>
         <div class="logo_ul">
             <div class="left"><img src="/img/BEGGINERS__GUITAR_HUB-removebg-preview.png"
                     alt="Beginner’s guitar hub logo" class="logo_svg"></div>
@@ -30,14 +30,12 @@
                     </ul>
                 </nav>
             </div>
-            <div class="right">
-                <button class="dark_mode_btn">s</button>
-            </div>
+            <div class="right"></div>
         </div>
         <div class="title">
             <h1>ODSTARTUJ SVOU KARIÉRU KYTARISTY<br> JEŠTĚ DNES!</h1>
         </div>
-        <button  class="start"><a  class="start_a" href="#doporucene">Začít</a></button>
+        <a class="start_1" href="#doporucene"><button class="start">Začít</button></a>
     </header>
 
     <section id="doporucene" class="doporucene_kytary">
@@ -112,25 +110,33 @@
         </div>
     </section>
     <section id="struny" class="struny">
-        <h2>Struny</h2>
-        <div class="struny_div">
-        <div><img class="struny_img" src="/img/Pojmenované struny.png" alt="Popis strun"></div>
-        <div class="struny_popis">
-            <h3>Jak se naučit názvy strun?</h3>
-            <p style="font-weight: bold;">Stačí si zapamatovat jednoduchou říkanku:</p>
-            <p>Ema (E1) - Nejtenčí</p>
-            <p>Hodila (H)</p>
-            <p>Granát (G)</p>
-            <p>Do (D)</p>
-            <p>Atomové (A)</p>
-            <p>Elektrárny (E2) - Nejtlustší</p>
-        </div>
+        <h2 class="struny-toggle">
+            Struny
+            <span class="arrow">▼</span>
+        </h2>
+
+        <div class="struny-content">
+            <div class="struny_div">
+                <div>
+                    <img class="struny_img" src="/img/Pojmenované struny.png" alt="Popis strun">
+                </div>
+
+                <div class="struny_popis">
+                    <h3>Jak se naučit názvy strun?</h3>
+                    <p><strong>Stačí si zapamatovat jednoduchou říkanku:</strong></p>
+                    <p>Ema (E1) – nejtenčí</p>
+                    <p>Hodila (H)</p>
+                    <p>Granát (G)</p>
+                    <p>Do (D)</p>
+                    <p>Atomové (A)</p>
+                    <p>Elektrárny (E2) – nejtlustší</p>
+                </div>
+            </div>
         </div>
     </section>
     <section id="akordy" class="zakladni_akordy">
         <h2>Základní akordy</h2>
         <div class="akord_container">
-            SEM DYNAMICKY NACITAT AKORDY!!!
         </div>
         <div class="tipy">
             <h3>Tipy</h3>
@@ -156,11 +162,18 @@
         </div>
     </section>
     <footer>
-        <a href="#header"><img src="/img/BEGGINERS__GUITAR_HUB-removebg-preview.png" alt="logo"></a>
+        obrazek!!!
         <p>© 2025 Beginner’s Guitar Hub</p>
         <p>Made by Michal Bubna</p>
     </footer>
     <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/ajax.js"></script>
+
+    <div id="modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+        <div id="modal-caption"></div>
+    </div>
 </body>
 
 </html>

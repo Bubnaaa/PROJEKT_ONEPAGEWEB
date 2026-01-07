@@ -1,8 +1,8 @@
 [
-    {"name": "C", "image": "img/Akordy/C.png"},
-    {"name": "D", "image": "img/Akordy/D.png"},
-    {"name": "E", "image": "img/Akordy/E.png"},
-    {"name": "F", "image": "img/Akordy/F.png"},
-    {"name": "G", "image": "img/Akordy/G.png"},
-    {"name": "A", "image": "img/Akordy/A.png"}
+    {"name": "C", "image": "../img/Akordy/C.png"},
+    {"name": "D", "image": "../img/Akordy/D.png"},
+    {"name": "E", "image": "../img/Akordy/E.png"},
+    {"name": "F", "image": "../img/Akordy/F.png"},
+    {"name": "G", "image": "../img/Akordy/G.png"},
+    {"name": "A", "image": "../img/Akordy/A.png"}
 ]
