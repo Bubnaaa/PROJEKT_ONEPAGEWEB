@@ -21,7 +21,12 @@
 
             <div class="options">
                 <nav class="navigation">
-                    <ul>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul id="nav-menu">
                         <li class="moznost"><a href="#doporucene">Doporučené kytary</a></li>
                         <li class="moznost"><a href="#rozdily">Rozdíly mezi kytarami</a></li>
                         <li class="moznost"><a href="#struny">Struny</a></li>
@@ -139,31 +144,56 @@
         <div class="akord_container">
         </div>
         <div class="tipy">
-            <h3>Tipy</h3>
-            <p>Nejdřív postav akordy pomalu, pak teprve hraj</p>
-            <p>Procvičuj přechody mezi akordy</p>
-            <p>Tlak v prstech (tlačení na struny) ovlivňují čistotu zvuku - neboj se zalačit</p>
+            <div class="tipy_text">
+                <h3>Tipy</h3>
+                <p>Nejdřív postav akordy pomalu, pak teprve hraj</p>
+                <p>Procvičuj přechody mezi akordy</p>
+                <p>Tlak v prstech (tlačení na struny) ovlivňují čistotu zvuku - neboj se zalačit</p>
+            </div>
         </div>
     </section>
     <section id="rytmus" class="rytmus">
         <h2>Rytmus (Strumming pattern)</h2>
-        <div class="rytmus_popis1">
-            <p>D = Dolů</p>
-            <p>U = Nahoru</p>
-        </div>
-        <div class="rytmus_popis2">
-            <p>Základní rytmus, na který se dá zahrát většina písniček</p>
-            <p>D-D-U-U-D-U</p>
+        <div class="rytmus_popis">
+            <div class="rytmus_popis1">
+                <p>D = Dolů</p>
+                <p>U = Nahoru</p>
+            </div>
+            <div class="rytmus_popis2">
+                <p>Základní rytmus, na který se dá zahrát většina písniček</p>
+                <p>D-D-U-U-D-U</p>
+            </div>
         </div>
         <div class="tipy">
-            <h3>Tipy</h3>
-            <p>Trénuj si strumming pattern na prázdných strunách</p>
-            <p>Později přidej akordy</p>
+            <div class="tipy_text">
+                <h3>Tipy</h3>
+                <p>Trénuj si strumming pattern na prázdných strunách</p>
+                <p>Později přidej akordy</p>
+            </div>
+        </div>
+    </section>
+    <section id="kontakt" class="kontakt">
+        <h2>Máš dotaz? Napiš mi!</h2>
+        <div class="form_container">
+            <form id="dotaznik_form">
+                <div class="input_group">
+                    <input type="text" name="jmeno" id="jmeno" placeholder="Tvé jméno" required>
+                </div>
+                <div class="input_group">
+                    <input type="email" name="email" id="email" placeholder="Tvůj e-mail" required>
+                </div>
+                <div class="input_group">
+                    <textarea name="zprava" id="zprava" rows="5" placeholder="Na co se chceš zeptat?"
+                        required></textarea>
+                </div>
+                <button type="submit" class="btn_odeslat">Odeslat dotaz</button>
+            </form>
+            <div id="form_odpoved" class="hidden"></div>
         </div>
     </section>
     <footer>
-        obrazek!!!
-        <p>© 2025 Beginner’s Guitar Hub</p>
+        <img src="/img/BEGGINERS__GUITAR_HUB-removebg-preview.png">
+        <p>© 2026 Beginner’s Guitar Hub</p>
         <p>Made by Michal Bubna</p>
     </footer>
     <script src="/assets/js/script.js"></script>
@@ -172,7 +202,6 @@
     <div id="modal" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content" id="modal-img">
-        <div id="modal-caption"></div>
     </div>
 </body>
 
