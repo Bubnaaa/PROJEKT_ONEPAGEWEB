@@ -1,4 +1,4 @@
-fetch("/data/chords.json")
+fetch("../data/chords.json")
   .then(response => response.json())
   .then(data => {
     const container = document.querySelector(".akord_container");
@@ -32,3 +32,35 @@ fetch("/data/chords.json")
   })
   .catch(error => console.error("Chyba při načítání akordů:", error));
 
+
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('dotaznik_form');
+    const odpovedDiv = document.getElementById('form_odpoved');
+
+    if (form) {
+        form.onsubmit = function(e) {
+            e.preventDefault();
+
+            const formData = new FormData(form);
+
+            fetch('ajax.php', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.text())
+            .then(text => {
+                odpovedDiv.innerHTML = text;
+                odpovedDiv.classList.remove('hidden');
+                odpovedDiv.style.display = 'block';
+                odpovedDiv.className = 'success-message';
+                
+                form.reset();
+            })
+            .catch(error => {
+                console.error('Chyba:', error);
+                odpovedDiv.innerHTML = "Došlo k chybě při odesílání.";
+                odpovedDiv.style.display = 'block';
+            });
+        };
+    }
+});

@@ -41,11 +41,11 @@ p {
 }
 
 header {
-    background: url("/img/How-to-Learn-Playing-Guitar-by-Yourself.jpg") no-repeat center center;
+    background: url("../../img/How-to-Learn-Playing-Guitar-by-Yourself.jpg") no-repeat center center;
     background-size: cover;
     color: white;
     padding: 20px 40px;
-
+    border-bottom: 4px solid #ea662d;
 }
 
 header .navigation ul {
@@ -233,12 +233,6 @@ header .start:hover {
     transition: 0.3s ease-in;
 }
 
-.akusticka:hover,
-.elektricka:hover {
-    transform: scale(1.02);
-}
-
-
 .kytara_img img {
     max-width: 150px;
     height: auto;
@@ -425,17 +419,13 @@ h2 {
     transition: 0.3s ease-in-out;
 }
 
-.rytmus:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-}
-
 .rytmus_popis {
     background-color: #EA672D;
     color: #fff;
     display: flex;
     align-items: center;
-    justify-content: space-around; /* Rozmístí legendu a vzorec hezky od sebe */
+    justify-content: space-around;
+    /* Rozmístí legendu a vzorec hezky od sebe */
     gap: 30px;
     margin: 30px 0;
     padding: 30px;
@@ -444,7 +434,8 @@ h2 {
 
 .rytmus_popis1 {
     font-size: 1.2rem;
-    border-right: 1px solid rgba(255, 255, 255, 0.3); /* Dělící čára na desktopu */
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+    /* Dělící čára na desktopu */
     padding-right: 40px;
 }
 
@@ -455,7 +446,8 @@ h2 {
 
 /* Ten výrazný vzorec s pozadím */
 .rytmus_popis2 p:last-child {
-    font-size: 2.2rem; /* Na desktopu může být fakt velký */
+    font-size: 2.2rem;
+    /* Na desktopu může být fakt velký */
     font-weight: 800;
     letter-spacing: 8px;
     background: rgba(255, 255, 255, 0.15);
@@ -463,7 +455,7 @@ h2 {
     border-radius: 15px;
     display: inline-block;
     margin-top: 15px;
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 /* --- KONTAKT --- */
@@ -551,18 +543,41 @@ h2 {
 
 /* --- FOOTER --- */
 footer {
-    background-color: #3a3a3a;
-    padding: 5%;
+    background-color: #1a1a1a;
+    color: #ffffff;
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 4px solid #EA672D;
+    margin-top: 50px;
 }
 
 footer img {
-    width: 200px;
+    width: 150px;
+    margin-bottom: 20px;
+    filter: brightness(0) invert(1);
+    opacity: 0.7;
+    transition: 0.3s ease;
+}
 
+footer img:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #888;
+    margin: 5px 0;
+    letter-spacing: 1px;
 }
 
 /* ----------------- RESPONZIVITA ------------------ */
 
 @media (max-width: 1050px) {
+    header {
+        padding: 15px 20px;
+    }
+
     .logo_svg {
         width: 6rem;
         display: block;
