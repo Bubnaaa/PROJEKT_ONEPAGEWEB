@@ -1,3 +1,6 @@
+# Spuštění webu
+- Pro lokální spuštění použijte Xampp nebo Wampp server. Live server ve VS code naukazuje dynamické načítání obrázků a nefunguje odesílání dormuláře na backendu pomocí PHP.
+
 # PROJEKT
 
 ## Název projektu
@@ -15,4 +18,3 @@
 - JSON
 ## Přínos
 - Naučení mladých kytaristiů absolutní základy
-  
